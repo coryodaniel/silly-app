@@ -7,7 +7,7 @@
   {
     "image": "mhart/alpine-node:7.9.0",
     "name": "complete-before-deadline",
-    "command": ["sleep 10 && echo before deadline && echo $(ls /tmp)"]
+    "command": ["sleep 10 && echo $(ls /tmp)"]
   },
   {
     "image": "mhart/alpine-node:7.9.0",
