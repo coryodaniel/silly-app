@@ -2,7 +2,7 @@
   {
     "image": "mhart/alpine-node:7.9.0",
     "name": "job-0",
-    "command": ["sleep 10 && echo hi"]
+    "command": ["sleep 65 && echo hi"]
   },
   {
     "image": "mhart/alpine-node:7.9.0",
