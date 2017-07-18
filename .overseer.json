@@ -1,8 +1,8 @@
 [
   {
-    "image": "busybox",
+    "image": "perl",
     "name": "job-0",
-    "command": "echo 'I am a job, man'"
+    "command": ["perl",  "-Mbignum=bpi", "-wle", "print bpi(2000)"]
   },
   {
     "image": "busybox",
