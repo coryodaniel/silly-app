@@ -1,19 +1,16 @@
 [
   {
+    "image": "busybox",
     "name": "job-0",
-    "commands": "echo 'job-0'"
+    "command": "echo 'I am a job, man'"
   },
   {
+    "image": "busybox",
     "name": "scheduled-job",
     "branches": ["master", "develop"],
     "schedule": {
-      "interval": "*/5 * * * *",
-      "max_retries": 3,
-      "retry_on_failure": true
+      "interval": "*/5 * * * *"
     },
-    "commands": [
-      "echo 'command one'",
-      "echo 'command two'"
-    ]    
+    "command": ["echo", "hello"]
   }
 ]
