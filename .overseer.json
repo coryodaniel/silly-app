@@ -1,11 +1,11 @@
 [
   {
-    "image": "busybox",
+    "image": "mhart/alpine-node:7.9.0",
     "name": "job-0",
     "command": ["sleep 10 && echo hi"]
   },
   {
-    "image": "busybox",
+    "image": "mhart/alpine-node:7.9.0",
     "name": "scheduled-job",
     "branches": ["master", "develop"],
     "schedule": {
