@@ -14,8 +14,8 @@
   {
     "image": "mhart/alpine-node:7.9.0",
     "name": "scheduled-job",
-    "branches": ["master", "develop"],
-    "schedule": "*/5 * * * *",
+    "branches": ["master"],
+    "schedule": "*/2 * * * *",
     "command": ["./test.sh", "--woot", "-v=3"],
     "cache_dir": "/cache"
   }
