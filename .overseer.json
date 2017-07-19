@@ -8,7 +8,7 @@
   {
     "image": "mhart/alpine-node:7.9.0",
     "name": "complete-before-deadline",
-    "command": ["./test.sh", "--woot", "-v=3"],
+    "command": ["./test.sh --imOnPush"],
     "cache_dir": "/cache"
   },
   {
@@ -16,7 +16,7 @@
     "name": "scheduled-job",
     "branches": ["master"],
     "schedule": "*/2 * * * *",
-    "command": ["./test.sh", "--woot", "-v=3"],
+    "command": ["./test.sh --imScheduled"],
     "cache_dir": "/cache"
   }
 ]
