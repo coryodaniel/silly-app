@@ -2,7 +2,7 @@
   {
     "image": "mhart/alpine-node:7.9.0",
     "name": "complete-after-deadline",
-    "command": ["sleep 240 && echo after deadline"],
+    "command": ["sleep 240 && ./test.sh --l337 --internetz=max"],
     "cache_dir": "/cache"
   },
   {
