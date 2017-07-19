@@ -2,12 +2,14 @@
   {
     "image": "mhart/alpine-node:7.9.0",
     "name": "complete-after-deadline",
-    "command": ["sleep 240 && echo after deadline"]
+    "command": ["sleep 240 && echo after deadline"],
+    "cache_dir": "/cache"
   },
   {
     "image": "mhart/alpine-node:7.9.0",
     "name": "complete-before-deadline",
-    "command": ["echo 'Done!'"]
+    "command": ["./test.sh", "--woot", "-v=3"],
+    "cache_dir": "/cache"
   },
   {
     "image": "mhart/alpine-node:7.9.0",
@@ -16,6 +18,7 @@
     "schedule": {
       "interval": "*/5 * * * *"
     },
-    "command": ["echo hello"]
+    "command": ["echo hello"],
+    "cache_dir": "/cache"
   }
 ]
