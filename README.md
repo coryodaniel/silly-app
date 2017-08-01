@@ -1,1 +1,1 @@
-Silly
+silly app
