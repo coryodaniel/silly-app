@@ -25,5 +25,12 @@
     "schedule": "0 */3 * * *",
     "command": ["./test.sh --imScheduled"],
     "cache_dir": "/cache"
+  },
+
+  {
+    "image": "mhart/alpine-node:7.9.0",
+    "name": "echo-job",
+    "command": ["echo 'just echoing in this silly app'"],
+    "cache_dir": "/cache"    
   }
 ]
