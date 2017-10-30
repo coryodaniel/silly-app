@@ -13,6 +13,13 @@
   },
   {
     "image": "mhart/alpine-node:7.9.0",
+    "name": "im-on-a-branch",
+    "branches": ["branch-filter-test"],
+    "command": ["echo hey!", "./test.sh --imOnABranch"],
+    "cache_dir": "/cache"
+  },
+  {
+    "image": "mhart/alpine-node:7.9.0",
     "name": "scheduled-job",
     "branches": ["master"],
     "schedule": "0 */3 * * *",
