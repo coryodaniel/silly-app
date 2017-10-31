@@ -1,13 +1,13 @@
 [
   {
     "image": "mhart/alpine-node:7.9.0",
-    "name": "complete-after-deadline",
+    "name": "after-deadline",
     "command": ["sleep 320 && ./test.sh --l337 --internetz=max"],
     "cache_dir": "/cache"
   },
   {
     "image": "mhart/alpine-node:7.9.0",
-    "name": "complete-before-deadline",
+    "name": "before-deadline",
     "command": ["echo hey!", "./test.sh --imOnPush"],
     "cache_dir": "/cache"
   },
@@ -31,6 +31,6 @@
     "image": "mhart/alpine-node:7.9.0",
     "name": "echo-job",
     "command": ["echo 'just echoing in this silly app'"],
-    "cache_dir": "/cache"    
+    "cache_dir": "/cache"
   }
 ]
