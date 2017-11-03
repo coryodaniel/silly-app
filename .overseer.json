@@ -1,5 +1,10 @@
 [
   {
+    "image": "busybox",
+    "name": "overseer-debugging",
+    "command": ["sleep 600"]
+  },
+  {
     "image": "mhart/alpine-node:7.9.0",
     "name": "after-deadline",
     "command": ["sleep 320 && ./test.sh --l337 --internetz=max"],
