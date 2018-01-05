@@ -1,2 +1,4 @@
 #! /usr/bin/env bash
+
 echo "This is the test script"
+echo "env: \n$(env)"
