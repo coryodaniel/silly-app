@@ -6,3 +6,5 @@ echo "I am running"
 echo "Script: $0"
 echo "Dir: $(pwd)"
 echo "Args: $@"
+
+echo "env: $(env)"
